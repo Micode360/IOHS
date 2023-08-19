@@ -38,19 +38,19 @@ export default function Header () {
             </div>
             <div className="flex justify-center border-b">
                 <nav className="flex w-[90%] lg:w-[80%]">
-                    <Link className={`font-[700] ${active === ""? "bg-[#bc1414] text-white": "hover:bg-[#bc1414] hover:text-white  hover:shadow-lg"} py-4 md:py-6 w-[8rem] text-center relative`} href="/">
+                    <Link className={`font-[700] ${active === ""? "bg-[#274fa7] text-white": "hover:bg-[#274fa7] hover:text-white  hover:shadow-lg"} py-4 md:py-6 w-[8rem] text-center relative`} href="/">
                         Home
                         <div className="bg-white absolute bottom-1 left-0 h-[0.28rem] right-0"></div>
                     </Link>
-                    <Link className={`font-[700] ${active === "about-us"? "bg-[#bc1414] text-white": "hover:bg-[#bc1414] hover:text-white hover:shadow-lg"} py-4 md:py-6 w-[8rem] text-center relative`} href="/about-us">
+                    <Link className={`font-[700] ${active === "about-us"? "bg-[#274fa7] text-white": "hover:bg-[#274fa7] hover:text-white hover:shadow-lg"} py-4 md:py-6 w-[8rem] text-center relative`} href="/about-us">
                         About Us
                         <div className="bg-white absolute bottom-1 left-0 h-[0.28rem] right-0"></div>
                     </Link>
-                    <Link className={`font-[700] ${active === "services"? "bg-[#bc1414] text-white": "hover:bg-[#bc1414] hover:text-white hover:shadow-lg"} py-4 md:py-6 w-[8rem] text-center relative`} href="/services">
+                    <Link className={`font-[700] ${active === "services"? "bg-#274fa7] text-white": "hover:bg-[#274fa7] hover:text-white hover:shadow-lg"} py-4 md:py-6 w-[8rem] text-center relative`} href="/services">
                             Services
                         <div className="bg-white absolute bottom-1 left-0 h-[0.28rem] right-0"></div>
                     </Link>
-                    <Link className={`font-[700] ${active === "contact"? "bg-[#bc1414] text-white": "hover:bg-[#bc1414] hover:text-white hover:shadow-lg"} py-4 md:py-6 w-[8rem] text-center relative`} href="/contact-us">
+                    <Link className={`font-[700] ${active === "contact"? "bg-[#274fa71] text-white": "hover:bg-[#274fa7] hover:text-white hover:shadow-lg"} py-4 md:py-6 w-[8rem] text-center relative`} href="/contact-us">
                         Contact Us
                         <div className="bg-white absolute bottom-1 left-0 h-[0.28rem] right-0"></div>
                     </Link>

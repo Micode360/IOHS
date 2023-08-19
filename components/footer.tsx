@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <section className="bg-[#bc1414] text-white md:pt-[3.625rem] pt-[2.625rem] px-6">
+    <section className="bg-[#274fa7] text-white md:pt-[3.625rem] pt-[2.625rem] px-6">
       <div className="flex flex-col md:grid md:grid-cols-4 pb-4 md:px-10 2xl:px-[6rem]">
         <nav className="md:col-span-2 mr-[4rem] ">
           <Link href="/">
