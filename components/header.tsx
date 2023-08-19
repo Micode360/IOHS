@@ -18,7 +18,7 @@ export default function Header () {
                 <div className="w-[90%] lg:w-[80%] grid grid-cols-4 gap-4">
                         <div className="col-span-2 flex items-center">
                         <Image
-                            className="w-[20rem]"
+                            className="w-auto h-[6rem]"
                             src="/logo_text.svg"
                             width={65}
                             height={65}
@@ -28,7 +28,7 @@ export default function Header () {
                         <div className="ios-header-contacts">
                             <p className="text-[#586e63] font-[700] mb-1">address: 6 ezimgbu crescent, presidential estate, gra phase iv, port harcourt, rivers state</p>
                             <p className="text-[#586e63] font-[700] mb-1">Phone: +234 703 784 6079</p>
-                            <a className="text-[#586e63] font-[700] mb-1" href="mailto:info@iohs.com">Email: info@iohs.com</a>
+                            <a className="text-[#586e63] font-[700] mb-1" href="mailto:info@iohs.com">Email: integratedohslimited@gmail.com</a>
                         </div>
                         <div className="ios-contact-us flex flex-col justify-center">
                             <h3 className="font-[200] text-[1.3rem] mb-2">Contact Us</h3>

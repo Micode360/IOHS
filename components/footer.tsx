@@ -1,28 +1,29 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export default function Footer() {
+  return (
+    <section className="bg-[#bc1414] text-white md:pt-[3.625rem] pt-[2.625rem] px-6">
+      <div className="flex flex-col md:grid md:grid-cols-4 pb-4 md:px-10 2xl:px-[6rem]">
+        <nav className="md:col-span-2 mr-[4rem] ">
+          <Link href="/">
+            <Image
+              className="min-w-[8.438rem] mb-[2.729rem]"
+              src="/logo_white.svg"
+              width={135}
+              height={32}
+              alt="invensis_logo"
+            />
+          </Link>
+          <p className="mb-6 w-[80%]">
+            6 ezimgbu crescent, presidential estate, gra phase iv, port
+            harcourt, rivers state.
+          </p>
+          <p className="mb-6">+234 703 784 6079</p>
+          <p className="mb-2">info@integratedoccupationalhealth.com</p>
+          <p className="mb-10">integratedohslimited@gmail.com</p>
 
-export default function Footer () {
-    return (
-        <section className="bg-[#bc1414] text-white md:pt-[3.625rem] pt-[2.625rem] px-6">
-        <div className="flex flex-col md:grid md:grid-cols-4 pb-4 md:px-10 2xl:px-[6rem]">
-          <nav className="md:col-span-2 mr-[4rem] ">
-            <Link href="/">
-              <Image
-                className="min-w-[8.438rem] mb-[2.729rem]"
-                src="/logo_white.svg"
-                width={135}
-                height={32}
-                alt="invensis_logo"
-              />
-            </Link>
-            <p className="mb-6 w-[80%]">
-                6 ezimgbu crescent, presidential estate, gra phase iv, port harcourt, rivers state.
-            </p>
-            <p className="mb-6">234 703 784 6079</p>
-            <p className="mb-10">info@iohs.com</p>
-  
-            {/* <div className="flex items-center mr-[1.375rem]">
+          {/* <div className="flex items-center mr-[1.375rem]">
               <a className="mr-8" href="#">
                 <svg
                   width="20"
@@ -85,62 +86,82 @@ export default function Footer () {
                 </svg>
               </a>
             </div> */}
-          </nav>
-  
-          <nav className="flex flex-col mt-6 md:mt-0">
-            <span className="mb-6">
-              <Link className="hover:underline" href="/">Home</Link>
-            </span>
-            <span className="mb-6">
-              <Link className="hover:underline" href="/about-us">About us</Link>
-            </span>
-            <span className="mb-6">
-              <Link className="hover:underline" href="/services">Services</Link>
-            </span>
-            <span className="mb-6">
-              <Link className="hover:underline" href="/contact">Contact us</Link>
-            </span>
-          </nav>
-          {/* <nav className="flex flex-col mt-6 md:mt-0">
+        </nav>
+
+        <nav className="flex flex-col mt-6 md:mt-0">
+          <span className="mb-6">
+            <Link className="hover:underline" href="/">
+              Home
+            </Link>
+          </span>
+          <span className="mb-6">
+            <Link className="hover:underline" href="/about-us">
+              About us
+            </Link>
+          </span>
+          <span className="mb-6">
+            <Link className="hover:underline" href="/services">
+              Services
+            </Link>
+          </span>
+          <span className="mb-6">
+            <Link className="hover:underline" href="/contact">
+              Contact us
+            </Link>
+          </span>
+        </nav>
+        {/* <nav className="flex flex-col mt-6 md:mt-0">
             <h2 className="text-[1.25rem] mb-8">Our Services</h2>
             <span className="mb-6">
               <Link className="hover:text-[#f75b30]" href="/services">Option 1</Link>
             </span>
           </nav> */}
-          <div className="flex mr-[1.375rem]">
-              <a className="mr-8" href="#">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M0 15.0838C0 22.5413 5.41625 28.7425 12.5 30V19.1663H8.75V15H12.5V11.6663C12.5 7.91625 14.9163 5.83375 18.3337 5.83375C19.4163 5.83375 20.5837 6 21.6663 6.16625V10H19.75C17.9163 10 17.5 10.9163 17.5 12.0837V15H21.5L20.8337 19.1663H17.5V30C24.5837 28.7425 30 22.5425 30 15.0838C30 6.7875 23.25 0 15 0C6.75 0 0 6.7875 0 15.0838Z"
-                    fill="#F9F9F9"
-                  />
-                </svg>
-              </a>
-  
-              <a className="mr-8" href="#">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M29.5538 6.17147C28.51 6.63397 27.3888 6.94647 26.21 7.08772C27.4263 6.35996 28.3362 5.21455 28.77 3.86522C27.6273 4.54396 26.3767 5.02171 25.0725 5.27772C24.1955 4.3413 23.0338 3.72063 21.7679 3.51206C20.502 3.3035 19.2026 3.51871 18.0716 4.12428C16.9405 4.72986 16.041 5.69192 15.5127 6.8611C14.9844 8.03028 14.8569 9.34116 15.15 10.5902C12.8346 10.474 10.5695 9.87215 8.50179 8.82385C6.43404 7.77554 4.60982 6.30417 3.14751 4.50522C2.64751 5.36772 2.36001 6.36772 2.36001 7.43272C2.35946 8.39146 2.59556 9.33552 3.04736 10.1811C3.49917 11.0267 4.15272 11.7478 4.95001 12.2802C4.02536 12.2508 3.12111 12.0009 2.31251 11.5515V11.6265C2.31242 12.9711 2.77756 14.2744 3.62899 15.3152C4.48043 16.356 5.66573 17.0701 6.98376 17.3365C6.12599 17.5686 5.22669 17.6028 4.35376 17.4365C4.72564 18.5935 5.45001 19.6053 6.42547 20.3301C7.40094 21.055 8.57866 21.4567 9.79376 21.479C7.73106 23.0982 5.18362 23.9766 2.56126 23.9727C2.09674 23.9728 1.63261 23.9457 1.17126 23.8915C3.83311 25.6029 6.93169 26.5112 10.0963 26.5077C20.8088 26.5077 26.665 17.6352 26.665 9.94022C26.665 9.69022 26.6588 9.43772 26.6475 9.18772C27.7866 8.36394 28.7699 7.34384 29.5513 6.17522L29.5538 6.17147Z"
-                    fill="#F9F9F9"
-                  />
-                </svg>
-              </a>
-  
-              <a className="mr-8" href="#">
+        <div className="flex mr-[1.375rem]">
+          <a className="mr-8" href="#">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M0 15.0838C0 22.5413 5.41625 28.7425 12.5 30V19.1663H8.75V15H12.5V11.6663C12.5 7.91625 14.9163 5.83375 18.3337 5.83375C19.4163 5.83375 20.5837 6 21.6663 6.16625V10H19.75C17.9163 10 17.5 10.9163 17.5 12.0837V15H21.5L20.8337 19.1663H17.5V30C24.5837 28.7425 30 22.5425 30 15.0838C30 6.7875 23.25 0 15 0C6.75 0 0 6.7875 0 15.0838Z"
+                fill="#F9F9F9"
+              />
+            </svg>
+          </a>
+
+          <a className="mr-8" href="#">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M29.5538 6.17147C28.51 6.63397 27.3888 6.94647 26.21 7.08772C27.4263 6.35996 28.3362 5.21455 28.77 3.86522C27.6273 4.54396 26.3767 5.02171 25.0725 5.27772C24.1955 4.3413 23.0338 3.72063 21.7679 3.51206C20.502 3.3035 19.2026 3.51871 18.0716 4.12428C16.9405 4.72986 16.041 5.69192 15.5127 6.8611C14.9844 8.03028 14.8569 9.34116 15.15 10.5902C12.8346 10.474 10.5695 9.87215 8.50179 8.82385C6.43404 7.77554 4.60982 6.30417 3.14751 4.50522C2.64751 5.36772 2.36001 6.36772 2.36001 7.43272C2.35946 8.39146 2.59556 9.33552 3.04736 10.1811C3.49917 11.0267 4.15272 11.7478 4.95001 12.2802C4.02536 12.2508 3.12111 12.0009 2.31251 11.5515V11.6265C2.31242 12.9711 2.77756 14.2744 3.62899 15.3152C4.48043 16.356 5.66573 17.0701 6.98376 17.3365C6.12599 17.5686 5.22669 17.6028 4.35376 17.4365C4.72564 18.5935 5.45001 19.6053 6.42547 20.3301C7.40094 21.055 8.57866 21.4567 9.79376 21.479C7.73106 23.0982 5.18362 23.9766 2.56126 23.9727C2.09674 23.9728 1.63261 23.9457 1.17126 23.8915C3.83311 25.6029 6.93169 26.5112 10.0963 26.5077C20.8088 26.5077 26.665 17.6352 26.665 9.94022C26.665 9.69022 26.6588 9.43772 26.6475 9.18772C27.7866 8.36394 28.7699 7.34384 29.5513 6.17522L29.5538 6.17147Z"
+                fill="#F9F9F9"
+              />
+            </svg>
+          </a>
+
+          <a className="mr-8" href="#">
+            <svg
+              width="20"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="white"
+            >
+              <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+            </svg>
+          </a>
+
+          {/* <a className="mr-8" href="#">
                 <svg
                   width="20"
                   height="20"
@@ -153,13 +174,12 @@ export default function Footer () {
                     fill="#F9F9F9"
                   />
                 </svg>
-              </a>
-            </div>
-
+              </a> */}
         </div>
-        <div className="pt-4 pb-6 border-t-[1px] border-[#ffffff] text-left md:text-center">
-          Copyright @ IOHS {`${new Date().getFullYear()}`}{" "}
-        </div>
-      </section>
-    )
+      </div>
+      <div className="pt-4 pb-6 border-t-[1px] border-[#ffffff] text-left md:text-center">
+        Copyright @ IOHS {`${new Date().getFullYear()}`}{" "}
+      </div>
+    </section>
+  );
 }
